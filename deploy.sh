@@ -1,1 +1,1 @@
-ECHO "Run react example deployment"
+echo "Run react example deployment"

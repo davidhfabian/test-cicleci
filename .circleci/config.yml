@@ -9,7 +9,7 @@ jobs:
       - checkout
       - run: npm i --silent
       - run: npm test
-      - run: npm build
+      - run: npm run build
 
   production:
     docker:
@@ -25,6 +25,8 @@ workflows:
     jobs:
       - test
       - production:
+          requires:
+            - test
           filters:
             branches:
               only:
