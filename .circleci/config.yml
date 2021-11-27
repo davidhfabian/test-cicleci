@@ -24,8 +24,8 @@ workflows:
   test:
     jobs:
       - test
-      - production
-        filters:
-          branches:
-            only:
-              - main
+      - production:
+          filters:
+            branches:
+              only:
+                - main
